@@ -1,9 +1,9 @@
 baseurl: 
 title: Compsci Guru
-subtitle: Content-centric blogging
+subtitle: A problem solving approach to learning programming.
 author: CSGuru
 simple_search: http://google.com/search
-description: A problem solving approach to learning programming.
+description: Computer science education blog.
 name: Compsci Guru
 markdown: Kramdown
 kramdown:  
@@ -27,4 +27,4 @@ transfer:
   command: rsync
   settings: -av
   source: _site/
-  destination: ~/Documents/compsciguru.github.io
+  destination: ~/compsciguru.github.io

@@ -2,15 +2,29 @@
 layout: default
 title: Compsci Guru
 ---
+  
+  <h1 class="content-listing-header sans">Welcome</h1>
+  <ul class="content">
+      <li class="listing">
+      	<hr class="slender">
+	{% markdown welcome.md %}
+      </li>
+  </ul>
   <h1 class="content-listing-header sans">Articles</h1>
   <ul class="content">
     {% for post in site.posts %}
       <li class="listing">
       	<hr class="slender">
       	<a href="{{ post.url }}"><h4 class="contrast">{{ post.title }}</h4></a>
+        <span class='sidenote'>
+          {% for tag in post.tags %}
+              <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>; 
+          {% endfor %}
+        </span>
       	<span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
 		<div>{{ post.excerpt }}</div>
 		
       </li>
     {% endfor %}
   </ul>
+
