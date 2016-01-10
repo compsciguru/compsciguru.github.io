@@ -1,17 +1,17 @@
 ---
-layout: default
-title: Compsci Guru
+layout: full-width
+title: Home
 ---
   
-  <h1 class="content-listing-header sans">Welcome</h1>
-  <ul class="content">
+  <h1 class="content-listing-header sans">compsci.guru</h1>
+  <ul class="content-listing">
       <li class="listing">
       	<hr class="slender">
 	{% markdown welcome.md %}
       </li>
   </ul>
   <h1 class="content-listing-header sans">Articles</h1>
-  <ul class="content">
+  <ul class="content-listing">
     {% for post in site.posts %}
       <li class="listing">
       	<hr class="slender">
@@ -27,4 +27,3 @@ title: Compsci Guru
       </li>
     {% endfor %}
   </ul>
-

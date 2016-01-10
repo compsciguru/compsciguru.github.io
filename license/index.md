@@ -1,6 +1,7 @@
 ---
 layout: default
 title: License
+nav_exclude: true
 ---
   
 ### License

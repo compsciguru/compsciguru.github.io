@@ -14,8 +14,7 @@ tags: [hello world, code club, passion for cs]
 
 Watch the video below to hear a panel of children interview potential Code Club volunteers, including Sir Tim Berners-Lee and HRH The Duke of York{% sidenote 3 "_'Urm, we were hoping for Prince Harry to be honest with you, Mr Winsor.'_"%}.
 
-<div align='center'><a href="http://www.youtube.com/watch?feature=player_embedded&v=FxhGIajRsq4" target="_blank"><img src="http://img.youtube.com/vi/FxhGIajRsq4/0.jpg" 
-alt="Code Club - The Interview" width="480" height="360" border="5" /></a></div>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=FxhGIajRsq4" target="_blank">{% maincolumn 'http://img.youtube.com/vi/FxhGIajRsq4/0.jpg' 'Code Club - The Interview' %}</a>
 
 Code Club offers [online training](https://training.codeclub.org.uk) for volunteers which I have found very useful for knowing what to expect and making sure I have the prerequisite knowledge to add value to my local code club. 
 
