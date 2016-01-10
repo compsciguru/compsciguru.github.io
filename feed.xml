@@ -1,30 +1,55 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Compsci Guru</title>
+    <description>Computer science education blog.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Jan 2016 11:40:11 +0000</pubDate>
+    <lastBuildDate>Sun, 10 Jan 2016 11:40:11 +0000</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Hello, World!</title>
+        <description>&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Computer science has been an integral part of my life from a young age&lt;/span&gt;  and I obtain a great deal of pleasure from passing on my passion for technology to the next generation. I am also keen to use this blog to share my thoughts on the best ways to engage children from all backgrounds with computer science and contribute teaching resources where possible, as a computer science professional (but not an educator). This first post&lt;sup class=&quot;sidenote-number&quot;&gt;1&lt;/sup&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;sup class=&quot;sidenote-number&quot;&gt;1&lt;/sup&gt; It is traditional that the first computer program that you write displays the text ‘Hello, World!’ and is named as such.&lt;/span&gt; introduces the Code Club initiative with which I have recently become involved and expresses why I find computer science so exciting.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;code-club&quot;&gt;Code Club&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.codeclub.org.uk/&quot;&gt;Code Club&lt;/a&gt; is a &lt;em&gt;nationwide network of volunteer-led after school coding clubs for children aged 9-11&lt;/em&gt;. This UK not-for-profit organisation is part of the &lt;a href=&quot;https://www.raspberrypi.org/about/&quot;&gt;Raspberry Pi Foundation&lt;/a&gt; and run by Clare Sutcliffe MBE&lt;sup class=&quot;sidenote-number&quot;&gt;2&lt;/sup&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;sup class=&quot;sidenote-number&quot;&gt;2&lt;/sup&gt; Clare Sutcliffe was recently appointed as a member of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Order_of_the_British_Empire&quot;&gt;Order of the British Empire&lt;/a&gt; in the 2016 New Year’s Honours List for services to technology education.&lt;/span&gt;, co-founder and CEO. Together, Code Club and the Raspberry Pi Foundation aim to put a code club in every community across the world inspiring children to develop their computational thinking, problem solving, planning, designing and collaboration skills through technology.&lt;/p&gt;
+
+&lt;p&gt;Watch the video below to hear a panel of children interview potential Code Club volunteers, including Sir Tim Berners-Lee and HRH The Duke of York&lt;sup class=&quot;sidenote-number&quot;&gt;3&lt;/sup&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;sup class=&quot;sidenote-number&quot;&gt;3&lt;/sup&gt; &lt;em&gt;‘Urm, we were hoping for Prince Harry to be honest with you, Mr Winsor.’&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=FxhGIajRsq4&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/FxhGIajRsq4/0.jpg&quot; alt=&quot;Code Club - The Interview&quot; width=&quot;480&quot; height=&quot;360&quot; border=&quot;5&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Code Club offers &lt;a href=&quot;https://training.codeclub.org.uk&quot;&gt;online training&lt;/a&gt; for volunteers which I have found very useful for knowing what to expect and making sure I have the prerequisite knowledge to add value to my local code club.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-journey&quot;&gt;My Journey&lt;/h2&gt;
+
+&lt;p&gt;The first two Code Club projects teach &lt;a href=&quot;https://scratch.mit.edu/&quot;&gt;Scratch&lt;/a&gt; - the programming equivalent of Lego. Scratch provides a brilliant introduction to coding, but sadly did not exist back when I first started teaching myself programming aged 8. My first introduction into the wonderful world of ones and zeros came courtesy of &lt;em&gt;SAMS Teach Yourself Visual Basic 6 in 24 Hours&lt;/em&gt;. It tooks me quite a bit longer than 24 hours and most of my programs were full of bugs, though admittedly that was mainly due to my inconsistent and questionable spelling! I got there, though, pursuing a passion to bring to life computer games of my own imagining&lt;sup class=&quot;sidenote-number&quot;&gt;4&lt;/sup&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;sup class=&quot;sidenote-number&quot;&gt;4&lt;/sup&gt; These were mainly themed around &lt;em&gt;Star Trek&lt;/em&gt; - I was a hardcore geek (and proud) from a young age.&lt;/span&gt;. You can read more about my experiences learning to code on the &lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-passion&quot;&gt;My Passion&lt;/h2&gt;
+&lt;p&gt;I grew up very privileged and was allowed a computer to play with at a very young age. Knowing that my father wouldn’t get upset if I did someone wrong and broke the computer fostered a curiosity about technology which quickly grew into confidence and passion.&lt;/p&gt;
+
+&lt;p&gt;I can remember trying to fix my class’s computer at school when I was about 7 years old and getting frustrated at an error message that made so little sense to me it appeared to be written in a different language. So I decided that I should learn computer programming to remedy this.&lt;/p&gt;
+
+&lt;p&gt;It was a while before I realised that computer science is a lot more than just programming (no amount of understanding Visual Basic code would have helped me decipher that error message), but by then I had the bug for programming&lt;sup class=&quot;sidenote-number&quot;&gt;5&lt;/sup&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;sup class=&quot;sidenote-number&quot;&gt;5&lt;/sup&gt; Along with a plague of computer ‘bugs’ festering in my code!&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Programming is about logic, yes, but to me it is also about creativity. I have never been able to paint nor draw, but I imagine that an artist receives a similar sort of satisfaction staring at their completed canvas as I do when my program finally executes without error. It’s that blending of creativity and logic that makes it exciting.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate>
+        <link>/articles/16/hello-world</link>
+        <guid isPermaLink="true">/articles/16/hello-world</guid>
+        
+        <category>hello world</category>
+        
+        <category>code club</category>
+        
+        <category>passion for cs</category>
+        
+        
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
